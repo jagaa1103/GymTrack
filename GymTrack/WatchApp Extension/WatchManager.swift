@@ -8,7 +8,7 @@
 
 import WatchConnectivity
 
-class WatchManager: NSObject, WCSessionDelegate {
+class WatchManager: NSObject, WCSessionDelegate, JSONParserProtocol {
     
     
     var session: WCSession?
@@ -21,11 +21,14 @@ class WatchManager: NSObject, WCSessionDelegate {
         }
     }
     
+    func sessionReachabilityDidChange(_ session: WCSession) {
+        print(session.isReachable)
+    }
+    
     func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
         switch activationState {
         case .activated:
             print("Watch activated")
-            self.sendMessage(message: "Hello, I'm your watch")
             break
         case .inactive:
             print("Watch inactive")
@@ -39,12 +42,24 @@ class WatchManager: NSObject, WCSessionDelegate {
     func session(_ session: WCSession, didReceiveMessage message: [String : Any]) {
         print(message)
     }
+    func session(_ session: WCSession, didReceiveMessageData messageData: Data) {
+        print(messageData)
+    }
     
-    func sendMessage(message: String) {
-        let m = ["fromWatch": message];
-        session?.sendMessage(m, replyHandler: nil, errorHandler: nil)
+    func sendMessage(message: String, type: String) {
+        session?.sendMessage([type: message], replyHandler: nil, errorHandler: nil)
     }
     func sendData(data: Data){
         session?.sendMessageData(data, replyHandler: nil, errorHandler: nil)
+    }
+    
+    var count = 0
+    func addCount(){
+        count += 1
+        let data = GestureData(name: "Barbell Curl", count: count)
+        if let jsonString = toJSON(items: data) {
+            print(jsonString)
+            sendMessage(message: jsonString, type: "GestureData")
+        }
     }
 }

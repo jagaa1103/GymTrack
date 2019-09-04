@@ -9,10 +9,12 @@
 import Foundation
 import WatchConnectivity
 
-class WatchManager: NSObject, WCSessionDelegate {
+class WatchManager: NSObject, WCSessionDelegate, JSONParserProtocol {
+    
     
     static let instance = WatchManager()
     var session: WCSession?
+    var watchManagerDelegate: WatchManagerProtocol?
     
     override init() {
         super.init()
@@ -47,7 +49,17 @@ class WatchManager: NSObject, WCSessionDelegate {
         print(messageData)
     }
     
+    
     func session(_ session: WCSession, didReceiveMessage message: [String : Any]) {
-        print(message)
+        if let countString = message["GestureData"] as? String {
+            if let gestureData = stringToJSON(string: countString, type: GestureData.self) {
+                print(gestureData)
+                watchManagerDelegate?.didUpdateCount(number: gestureData.count)
+            }
+        }
     }
+}
+
+protocol WatchManagerProtocol {
+    func didUpdateCount(number: Int)
 }

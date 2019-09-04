@@ -15,6 +15,9 @@ class InterfaceController: WKInterfaceController {
     @IBAction func connectClicked() {
         watchManager = WatchManager()
     }
+    @IBAction func increaseCount() {
+        watchManager?.addCount()
+    }
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
         // Configure interface objects here.

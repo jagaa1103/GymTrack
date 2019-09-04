@@ -19,6 +19,11 @@
                                 <action selector="connectClicked" destination="AgC-eL-Hgc" id="9S7-6C-Sp7"/>
                             </connections>
                         </button>
+                        <button width="1" alignment="center" title="increase count" id="az5-dj-kQf">
+                            <connections>
+                                <action selector="increaseCount" destination="AgC-eL-Hgc" id="2ag-Tn-x5Y"/>
+                            </connections>
+                        </button>
                     </items>
                 </controller>
             </objects>

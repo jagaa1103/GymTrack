@@ -25,6 +25,7 @@
 		355FF9B62317BFE700244C17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 355FF9B52317BFE700244C17 /* Assets.xcassets */; };
 		355FF9B92317BFE700244C17 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 355FF9B72317BFE700244C17 /* LaunchScreen.storyboard */; };
 		355FF9C22317C10200244C17 /* MainPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355FF9C12317C10200244C17 /* MainPage.swift */; };
+		356DE3A52320ED5B00398A6B /* MotionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356DE3A42320ED5B00398A6B /* MotionManager.swift */; };
 		35ECF44A231E69BB00C036EB /* GestureData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35ECF449231E69BB00C036EB /* GestureData.swift */; };
 		35ECF44D231E6B4D00C036EB /* GestureData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35ECF44C231E6B4D00C036EB /* GestureData.swift */; };
 /* End PBXBuildFile section */
@@ -95,6 +96,7 @@
 		355FF9B82317BFE700244C17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		355FF9BA2317BFE700244C17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		355FF9C12317C10200244C17 /* MainPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPage.swift; sourceTree = "<group>"; };
+		356DE3A42320ED5B00398A6B /* MotionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionManager.swift; sourceTree = "<group>"; };
 		35ECF449231E69BB00C036EB /* GestureData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GestureData.swift; sourceTree = "<group>"; };
 		35ECF44C231E6B4D00C036EB /* GestureData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GestureData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -146,6 +148,7 @@
 		3527D94E231E497400CFEE0C /* WatchApp Extension */ = {
 			isa = PBXGroup;
 			children = (
+				356DE3A32320ED4600398A6B /* Manager */,
 				35ECF448231E69A000C036EB /* Data */,
 				3527D94F231E497400CFEE0C /* InterfaceController.swift */,
 				3527D951231E497400CFEE0C /* ExtensionDelegate.swift */,
@@ -153,7 +156,6 @@
 				3527D955231E497500CFEE0C /* Assets.xcassets */,
 				3527D957231E497500CFEE0C /* Info.plist */,
 				3527D958231E497500CFEE0C /* PushNotificationPayload.apns */,
-				3527D967231E54E400CFEE0C /* WatchManager.swift */,
 			);
 			path = "WatchApp Extension";
 			sourceTree = "<group>";
@@ -208,6 +210,15 @@
 				3527D938231E2E0D00CFEE0C /* GestureDetailPage.swift */,
 			);
 			path = Pages;
+			sourceTree = "<group>";
+		};
+		356DE3A32320ED4600398A6B /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				3527D967231E54E400CFEE0C /* WatchManager.swift */,
+				356DE3A42320ED5B00398A6B /* MotionManager.swift */,
+			);
+			path = Manager;
 			sourceTree = "<group>";
 		};
 		35ECF448231E69A000C036EB /* Data */ = {
@@ -360,6 +371,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3527D954231E497400CFEE0C /* NotificationController.swift in Sources */,
+				356DE3A52320ED5B00398A6B /* MotionManager.swift in Sources */,
 				3527D952231E497400CFEE0C /* ExtensionDelegate.swift in Sources */,
 				351861D9231F87610067A11E /* JSONParser.swift in Sources */,
 				3527D950231E497400CFEE0C /* InterfaceController.swift in Sources */,

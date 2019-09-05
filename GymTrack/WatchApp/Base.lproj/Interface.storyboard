@@ -14,17 +14,20 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="WatchApp" customModuleProvider="target">
                     <items>
-                        <button width="1" alignment="center" title="connect" id="Czb-XG-mbh">
-                            <connections>
-                                <action selector="connectClicked" destination="AgC-eL-Hgc" id="9S7-6C-Sp7"/>
-                            </connections>
-                        </button>
                         <button width="1" alignment="center" title="increase count" id="az5-dj-kQf">
                             <connections>
                                 <action selector="increaseCount" destination="AgC-eL-Hgc" id="2ag-Tn-x5Y"/>
                             </connections>
                         </button>
+                        <button width="1" alignment="center" title="start motion" id="5Uz-FK-pBj">
+                            <connections>
+                                <action selector="startMotion" destination="AgC-eL-Hgc" id="tKq-ZT-2sq"/>
+                            </connections>
+                        </button>
                     </items>
+                    <connections>
+                        <outlet property="motionButton" destination="5Uz-FK-pBj" id="XGA-M0-flG"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="220" y="345"/>

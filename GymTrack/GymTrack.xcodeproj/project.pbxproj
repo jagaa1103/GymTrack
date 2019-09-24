@@ -7,10 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		350E71072339E0D6004426CF /* GestureListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350E71062339E0D6004426CF /* GestureListView.swift */; };
+		350E71092339EB9B004426CF /* GestureDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350E71082339EB9B004426CF /* GestureDetail.swift */; };
+		350E710B2339F0A3004426CF /* ListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350E710A2339F0A3004426CF /* ListItem.swift */; };
+		350E710D2339F7C3004426CF /* WatchConnectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350E710C2339F7C3004426CF /* WatchConnectionView.swift */; };
 		351861D9231F87610067A11E /* JSONParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351861D8231F87610067A11E /* JSONParser.swift */; };
 		351861DB231F97DC0067A11E /* JSONParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351861DA231F97DC0067A11E /* JSONParser.swift */; };
-		3527D92B231E102A00CFEE0C /* GestureTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3527D92A231E102A00CFEE0C /* GestureTableView.swift */; };
-		3527D939231E2E0D00CFEE0C /* GestureDetailPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3527D938231E2E0D00CFEE0C /* GestureDetailPage.swift */; };
 		3527D942231E497200CFEE0C /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3527D940231E497200CFEE0C /* Interface.storyboard */; };
 		3527D944231E497400CFEE0C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3527D943231E497400CFEE0C /* Assets.xcassets */; };
 		3527D94B231E497400CFEE0C /* WatchApp Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 3527D94A231E497400CFEE0C /* WatchApp Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -26,6 +28,7 @@
 		355FF9B92317BFE700244C17 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 355FF9B72317BFE700244C17 /* LaunchScreen.storyboard */; };
 		355FF9C22317C10200244C17 /* MainPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355FF9C12317C10200244C17 /* MainPage.swift */; };
 		356DE3A52320ED5B00398A6B /* MotionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356DE3A42320ED5B00398A6B /* MotionManager.swift */; };
+		359FFBC723265160007C1175 /* HealthKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359FFBC623265160007C1175 /* HealthKitManager.swift */; };
 		35ECF44A231E69BB00C036EB /* GestureData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35ECF449231E69BB00C036EB /* GestureData.swift */; };
 		35ECF44D231E6B4D00C036EB /* GestureData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35ECF44C231E6B4D00C036EB /* GestureData.swift */; };
 /* End PBXBuildFile section */
@@ -73,10 +76,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		350E71062339E0D6004426CF /* GestureListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GestureListView.swift; sourceTree = "<group>"; };
+		350E71082339EB9B004426CF /* GestureDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GestureDetail.swift; sourceTree = "<group>"; };
+		350E710A2339F0A3004426CF /* ListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItem.swift; sourceTree = "<group>"; };
+		350E710C2339F7C3004426CF /* WatchConnectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchConnectionView.swift; sourceTree = "<group>"; };
 		351861D8231F87610067A11E /* JSONParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONParser.swift; sourceTree = "<group>"; };
 		351861DA231F97DC0067A11E /* JSONParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONParser.swift; sourceTree = "<group>"; };
-		3527D92A231E102A00CFEE0C /* GestureTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GestureTableView.swift; sourceTree = "<group>"; };
-		3527D938231E2E0D00CFEE0C /* GestureDetailPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GestureDetailPage.swift; sourceTree = "<group>"; };
 		3527D93E231E497200CFEE0C /* WatchApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatchApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3527D941231E497200CFEE0C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		3527D943231E497400CFEE0C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -97,6 +102,7 @@
 		355FF9BA2317BFE700244C17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		355FF9C12317C10200244C17 /* MainPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPage.swift; sourceTree = "<group>"; };
 		356DE3A42320ED5B00398A6B /* MotionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionManager.swift; sourceTree = "<group>"; };
+		359FFBC623265160007C1175 /* HealthKitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitManager.swift; sourceTree = "<group>"; };
 		35ECF449231E69BB00C036EB /* GestureData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GestureData.swift; sourceTree = "<group>"; };
 		35ECF44C231E6B4D00C036EB /* GestureData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GestureData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -119,18 +125,12 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3527D92C231E25E400CFEE0C /* GestureTable */ = {
-			isa = PBXGroup;
-			children = (
-				3527D92A231E102A00CFEE0C /* GestureTableView.swift */,
-			);
-			path = GestureTable;
-			sourceTree = "<group>";
-		};
 		3527D937231E2DD300CFEE0C /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				3527D92C231E25E400CFEE0C /* GestureTable */,
+				350E71062339E0D6004426CF /* GestureListView.swift */,
+				350E710A2339F0A3004426CF /* ListItem.swift */,
+				350E710C2339F7C3004426CF /* WatchConnectionView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -206,8 +206,8 @@
 		355FF9C02317C0ED00244C17 /* Pages */ = {
 			isa = PBXGroup;
 			children = (
+				350E71082339EB9B004426CF /* GestureDetail.swift */,
 				355FF9C12317C10200244C17 /* MainPage.swift */,
-				3527D938231E2E0D00CFEE0C /* GestureDetailPage.swift */,
 			);
 			path = Pages;
 			sourceTree = "<group>";
@@ -217,6 +217,7 @@
 			children = (
 				3527D967231E54E400CFEE0C /* WatchManager.swift */,
 				356DE3A42320ED5B00398A6B /* MotionManager.swift */,
+				359FFBC623265160007C1175 /* HealthKitManager.swift */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -372,6 +373,7 @@
 			files = (
 				3527D954231E497400CFEE0C /* NotificationController.swift in Sources */,
 				356DE3A52320ED5B00398A6B /* MotionManager.swift in Sources */,
+				359FFBC723265160007C1175 /* HealthKitManager.swift in Sources */,
 				3527D952231E497400CFEE0C /* ExtensionDelegate.swift in Sources */,
 				351861D9231F87610067A11E /* JSONParser.swift in Sources */,
 				3527D950231E497400CFEE0C /* InterfaceController.swift in Sources */,
@@ -384,13 +386,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3527D92B231E102A00CFEE0C /* GestureTableView.swift in Sources */,
+				350E710B2339F0A3004426CF /* ListItem.swift in Sources */,
 				355FF9C22317C10200244C17 /* MainPage.swift in Sources */,
 				351861DB231F97DC0067A11E /* JSONParser.swift in Sources */,
 				3527D966231E49A300CFEE0C /* WatchManager.swift in Sources */,
-				3527D939231E2E0D00CFEE0C /* GestureDetailPage.swift in Sources */,
 				355FF9AF2317BFE600244C17 /* AppDelegate.swift in Sources */,
+				350E71092339EB9B004426CF /* GestureDetail.swift in Sources */,
+				350E71072339E0D6004426CF /* GestureListView.swift in Sources */,
 				35ECF44D231E6B4D00C036EB /* GestureData.swift in Sources */,
+				350E710D2339F7C3004426CF /* WatchConnectionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -447,7 +451,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
 			};
 			name = Debug;
 		};
@@ -469,7 +473,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
 			};
 			name = Release;
 		};
@@ -488,7 +492,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
 			};
 			name = Debug;
 		};
@@ -507,7 +511,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
 			};
 			name = Release;
 		};
@@ -562,7 +566,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -617,7 +621,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -634,7 +638,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 33N4W7X39J;
 				INFOPLIST_FILE = GymTrack/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -653,7 +657,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 33N4W7X39J;
 				INFOPLIST_FILE = GymTrack/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

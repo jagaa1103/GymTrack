@@ -11,7 +11,6 @@ import WatchConnectivity
 
 class WatchManager: NSObject, WCSessionDelegate, JSONParserProtocol {
     
-    
     static let instance = WatchManager()
     var session: WCSession?
     var watchManagerDelegate: WatchManagerProtocol?
@@ -24,20 +23,23 @@ class WatchManager: NSObject, WCSessionDelegate, JSONParserProtocol {
         session?.delegate = self
         session?.activate()
     }
-    
-    @available(iOS 9.3, *)
     func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
         switch activationState {
         case .activated:
             print("activated")
+            watchManagerDelegate?.didStateChanged(state: .connected)
         case .inactive:
             print("inactive")
+            watchManagerDelegate?.didStateChanged(state: .disconnected)
         case .notActivated:
             print("not activated")
+            watchManagerDelegate?.didStateChanged(state: .disconnected)
         default:
             print("unknown")
+            watchManagerDelegate?.didStateChanged(state: .disconnected)
         }
     }
+    
     func sessionDidBecomeInactive(_ session: WCSession) {
         print("session become inactive")
     }
@@ -62,4 +64,11 @@ class WatchManager: NSObject, WCSessionDelegate, JSONParserProtocol {
 
 protocol WatchManagerProtocol {
     func didUpdateCount(number: Int)
+    func didStateChanged(state: ConnectionState)
 }
+
+enum ConnectionState {
+    case connected
+    case disconnected
+}
+

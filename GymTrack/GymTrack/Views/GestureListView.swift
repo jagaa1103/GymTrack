@@ -17,7 +17,7 @@ struct Item: Identifiable {
 struct GestureListView: View {
     
     var items = [Item(id: 0, name: "Golf", description: "Detecting Golf Swing"), Item(id: 1, name: "Lifting", description: "Detecting Weight Lifting")]
-    
+
     var body: some View {
         NavigationView {
             List{

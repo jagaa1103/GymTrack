@@ -34,4 +34,14 @@ extension JSONParserProtocol {
             fatalError(error.localizedDescription)
         }
     }
+    
+    func dataToJSON<T: Codable>(data: Data) -> T? {
+        do{
+            let d = try JSONDecoder().decode(T.self, from: data)
+            return d
+        }catch{
+            Logger.instance.log(tag: "JSONParser", message: error.localizedDescription)
+            return nil
+        }
+    }
 }

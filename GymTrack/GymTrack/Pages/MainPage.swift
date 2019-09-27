@@ -10,6 +10,11 @@ import SwiftUI
 
 struct MainPage: View {
     var body: some View {
-        GestureListView()
+//        GestureListView()
+        Button(action: showDetail, label: { Text("Golf")})
+    }
+    
+    func showDetail(){
+        print("Golf")
     }
 }

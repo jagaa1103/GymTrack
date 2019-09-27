@@ -8,36 +8,14 @@
 
 import SwiftUI
 
-struct GestureDetail: View{
+struct GestureDetail: View {
+    @ObservedObject var gestureManager = GestureManager()
     var item: Item
-    @State var count = 0
-    @State var watchState: ConnectionState = .disconnected
-    let watchManager = WatchManager()
     var body: some View {
         VStack {
-            WatchConnectionView(connectionState: watchState)
-            Text(item.description)
-            Text("\(count)")
-                .font(.system(size: 32))
-                .padding()
+//            WatchConnectionView(connectionState: connectionState)
+            Text("\(gestureManager.count)").padding()
         }
         .navigationBarTitle(Text(item.name), displayMode: .inline)
-    }
-}
-
-extension GestureDetail: WatchManagerProtocol {
-    func didStateChanged(state: ConnectionState) {
-        switch state {
-        case .connected:
-            watchState = .connected
-            break
-        case .disconnected:
-            watchState = .disconnected
-            break
-        }
-    }
-    
-    func didUpdateCount(number: Int) {
-        count = number
     }
 }

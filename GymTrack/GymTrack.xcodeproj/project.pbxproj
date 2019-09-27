@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		35025B94233C5E8A0042525F /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35025B93233C5E8A0042525F /* Logger.swift */; };
 		350E71072339E0D6004426CF /* GestureListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350E71062339E0D6004426CF /* GestureListView.swift */; };
 		350E71092339EB9B004426CF /* GestureDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350E71082339EB9B004426CF /* GestureDetail.swift */; };
 		350E710B2339F0A3004426CF /* ListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350E710A2339F0A3004426CF /* ListItem.swift */; };
@@ -23,6 +24,8 @@
 		3527D95B231E497500CFEE0C /* WatchApp.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 3527D93E231E497200CFEE0C /* WatchApp.app */; };
 		3527D966231E49A300CFEE0C /* WatchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3527D965231E49A300CFEE0C /* WatchManager.swift */; };
 		3527D968231E54E400CFEE0C /* WatchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3527D967231E54E400CFEE0C /* WatchManager.swift */; };
+		3554E9A4233DF3E1001FEFC8 /* Gesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3554E9A3233DF3E1001FEFC8 /* Gesture.swift */; };
+		3554E9A6233DF5F7001FEFC8 /* GestureManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3554E9A5233DF5F7001FEFC8 /* GestureManager.swift */; };
 		355FF9AF2317BFE600244C17 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355FF9AE2317BFE600244C17 /* AppDelegate.swift */; };
 		355FF9B62317BFE700244C17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 355FF9B52317BFE700244C17 /* Assets.xcassets */; };
 		355FF9B92317BFE700244C17 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 355FF9B72317BFE700244C17 /* LaunchScreen.storyboard */; };
@@ -76,6 +79,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		35025B93233C5E8A0042525F /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		350E71062339E0D6004426CF /* GestureListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GestureListView.swift; sourceTree = "<group>"; };
 		350E71082339EB9B004426CF /* GestureDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GestureDetail.swift; sourceTree = "<group>"; };
 		350E710A2339F0A3004426CF /* ListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItem.swift; sourceTree = "<group>"; };
@@ -95,6 +99,8 @@
 		3527D958231E497500CFEE0C /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		3527D965231E49A300CFEE0C /* WatchManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchManager.swift; sourceTree = "<group>"; };
 		3527D967231E54E400CFEE0C /* WatchManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchManager.swift; sourceTree = "<group>"; };
+		3554E9A3233DF3E1001FEFC8 /* Gesture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gesture.swift; sourceTree = "<group>"; };
+		3554E9A5233DF5F7001FEFC8 /* GestureManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GestureManager.swift; sourceTree = "<group>"; };
 		355FF9AB2317BFE600244C17 /* GymTrack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GymTrack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		355FF9AE2317BFE600244C17 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		355FF9B52317BFE700244C17 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -125,6 +131,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		35025B92233C5E760042525F /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				35025B93233C5E8A0042525F /* Logger.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
 		3527D937231E2DD300CFEE0C /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -164,6 +178,7 @@
 			isa = PBXGroup;
 			children = (
 				3527D965231E49A300CFEE0C /* WatchManager.swift */,
+				3554E9A5233DF5F7001FEFC8 /* GestureManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -191,6 +206,7 @@
 		355FF9AD2317BFE600244C17 /* GymTrack */ = {
 			isa = PBXGroup;
 			children = (
+				35025B92233C5E760042525F /* Utility */,
 				35ECF44B231E6B4100C036EB /* Data */,
 				3527D964231E499200CFEE0C /* Managers */,
 				3527D937231E2DD300CFEE0C /* Views */,
@@ -236,6 +252,7 @@
 			children = (
 				35ECF44C231E6B4D00C036EB /* GestureData.swift */,
 				351861DA231F97DC0067A11E /* JSONParser.swift */,
+				3554E9A3233DF3E1001FEFC8 /* Gesture.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -387,12 +404,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				350E710B2339F0A3004426CF /* ListItem.swift in Sources */,
+				3554E9A6233DF5F7001FEFC8 /* GestureManager.swift in Sources */,
 				355FF9C22317C10200244C17 /* MainPage.swift in Sources */,
 				351861DB231F97DC0067A11E /* JSONParser.swift in Sources */,
 				3527D966231E49A300CFEE0C /* WatchManager.swift in Sources */,
 				355FF9AF2317BFE600244C17 /* AppDelegate.swift in Sources */,
+				35025B94233C5E8A0042525F /* Logger.swift in Sources */,
 				350E71092339EB9B004426CF /* GestureDetail.swift in Sources */,
 				350E71072339E0D6004426CF /* GestureListView.swift in Sources */,
+				3554E9A4233DF3E1001FEFC8 /* Gesture.swift in Sources */,
 				35ECF44D231E6B4D00C036EB /* GestureData.swift in Sources */,
 				350E710D2339F7C3004426CF /* WatchConnectionView.swift in Sources */,
 			);
